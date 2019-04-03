@@ -55,6 +55,7 @@ table {
 
 //Variables
 @colorsplash: #BFB8CA;
+@accent: #E9ECEF;
 
 //Mixins
 .block() {
@@ -85,6 +86,9 @@ table {
 .square() {
 	border: 2px solid black;
 	width: 40%;
+	text-align:center;
+	padding: 20px 0;
+	background-color: @accent;
 }
 
 .center() {
@@ -112,7 +116,7 @@ body {
 }
 
 header {
-	background-color: #E9ECEF;
+	background-color: @accent;
 	.block;
 	.stacked;
 	
@@ -138,6 +142,10 @@ header {
 	.center;
 }
 
+.box {
+	.square;
+}
+
 .middle-one {
 	.block;
 	.block-padding;
@@ -151,6 +159,28 @@ header {
 .bottom {
 	.block;
 	.block-padding;
+
+	.box {
+		padding: 0;
+
+     .edu-box {
+		border-bottom: 1px solid black;
+		padding: 5px 0;
+		margin: 3px 0;
+
+		h4 {
+		  font-weight: bolder;
+		}
+	 }
+	
+	 .end-box {
+		 margin: 0;
+	 }
+
+	 .last-box {
+		 border:none;
+	 }
+	}
 }
 
 .contact {
@@ -158,6 +188,4 @@ header {
 	.block-padding;
 }
 
-.box {
-	.square;
-}
+

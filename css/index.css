@@ -175,6 +175,13 @@ header .header-bottom {
   justify-content: center;
   font-weight: bolder;
 }
+.box {
+  border: 2px solid black;
+  width: 40%;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #E9ECEF;
+}
 .middle-one {
   height: 20%;
   display: flex;
@@ -196,14 +203,27 @@ header .header-bottom {
   justify-content: space-evenly;
   padding: 30px;
 }
+.bottom .box {
+  padding: 0;
+}
+.bottom .box .edu-box {
+  border-bottom: 1px solid black;
+  padding: 5px 0;
+  margin: 3px 0;
+}
+.bottom .box .edu-box h4 {
+  font-weight: bolder;
+}
+.bottom .box .end-box {
+  margin: 0;
+}
+.bottom .box .last-box {
+  border: none;
+}
 .contact {
   height: 20%;
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
   padding: 30px;
-}
-.box {
-  border: 2px solid black;
-  width: 40%;
 }
