@@ -65,6 +65,11 @@ table {
 	justify-content: space-evenly;
 }
 
+.border(){
+	border-right: 2px solid black;
+	border-left: 2px solid black;
+}
+
 .block-padding(){
 	padding: 30px;
 }
@@ -88,7 +93,7 @@ table {
 	width: 40%;
 	text-align:center;
 	padding: 20px 0;
-	background-color: @accent;
+	background-color: @colorsplash;
 }
 
 .center() {
@@ -105,14 +110,34 @@ html {
 
 body {
 	font-size: 1.6rem;
-	background-color: @colorsplash;
+	background-color: @accent;
 }
+
+/*Navagation*/
+.nav {
+	nav{
+		font-weight: bolder;
+		display: flex;
+		justify-content: center;
+		justify-content: space-evenly;
+		margin: 20px auto 10px auto;
+		max-width: 80%;
+	}
+
+	a {
+		text-decoration: none;
+		font-size: 20px;
+		color: black;
+	}
+}
+
 
 .container{
 	width:80%;
 	height: 100%;
 	margin: 0 auto;
-	background-color:#FFFFFF;
+	background-color: @colorsplash;
+	
 }
 
 header {
@@ -133,6 +158,10 @@ header {
 	.header-bottom {
 		font-size: 2.2rem;
 		.header-style;
+		background-color: @colorsplash;
+		border-left: 2px solid black;
+		border-right: 2px solid black;
+
 
 	}
 }
@@ -140,6 +169,12 @@ header {
 .sec-heading {
 	background-color: @colorsplash;
 	.center;
+	.border;
+	padding: 20px 0;
+}
+
+.skills {
+	border-top:2px solid black
 }
 
 .box {
@@ -148,16 +183,19 @@ header {
 
 .middle-one {
 	.block;
+	.border;
 	.block-padding;
 }
 
 .middle-two {
 	.block;
+	.border;
 	.block-padding;
 }
 
 .bottom {
 	.block;
+	.border;
 	.block-padding;
 
 	.box {
@@ -185,6 +223,7 @@ header {
 
 .contact {
 	.block;
+	.border;
 	.block-padding;
 }
 

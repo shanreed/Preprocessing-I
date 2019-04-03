@@ -136,13 +136,27 @@ html {
 }
 body {
   font-size: 1.6rem;
-  background-color: #BFB8CA;
+  background-color: #E9ECEF;
+}
+/*Navagation*/
+.nav nav {
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin: 20px auto 10px auto;
+  max-width: 80%;
+}
+.nav a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
 }
 .container {
   width: 80%;
   height: 100%;
   margin: 0 auto;
-  background-color: #FFFFFF;
+  background-color: #BFB8CA;
 }
 header {
   background-color: #E9ECEF;
@@ -168,25 +182,36 @@ header .header-bottom {
   width: 60%;
   text-align: center;
   padding: 20px 0;
+  background-color: #BFB8CA;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
 }
 .sec-heading {
   background-color: #BFB8CA;
   display: flex;
   justify-content: center;
   font-weight: bolder;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  padding: 20px 0;
+}
+.skills {
+  border-top: 2px solid black;
 }
 .box {
   border: 2px solid black;
   width: 40%;
   text-align: center;
   padding: 20px 0;
-  background-color: #E9ECEF;
+  background-color: #BFB8CA;
 }
 .middle-one {
   height: 20%;
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
   padding: 30px;
 }
 .middle-two {
@@ -194,6 +219,8 @@ header .header-bottom {
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
   padding: 30px;
 }
 .bottom {
@@ -201,6 +228,8 @@ header .header-bottom {
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
   padding: 30px;
 }
 .bottom .box {
@@ -225,5 +254,7 @@ header .header-bottom {
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
   padding: 30px;
 }
