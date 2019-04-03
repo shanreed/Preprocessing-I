@@ -53,7 +53,111 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+//Variables
+@colorsplash: #BFB8CA;
+
+//Mixins
+.block() {
+	height:20%;
+	display:flex;	
+	justify-content: center;
+	justify-content: space-evenly;
 }
 
+.block-padding(){
+	padding: 30px;
+}
+
+.stacked() {
+		height:20%;
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+		
+}
+
+.header-style() {
+	width: 60%;
+	text-align: center;
+	padding: 20px 0
+}
+
+.square() {
+	border: 2px solid black;
+	width: 40%;
+}
+
+.center() {
+	display: flex;
+	justify-content: center;
+	font-weight: bolder;
+}
+
+//My code
+html {
+	font-size: 62.5%;
+	height: 100%;
+}
+
+body {
+	font-size: 1.6rem;
+	background-color: @colorsplash;
+}
+
+.container{
+	width:80%;
+	height: 100%;
+	margin: 0 auto;
+	background-color:#FFFFFF;
+}
+
+header {
+	background-color: #E9ECEF;
+	.block;
+	.stacked;
+	
+	.header-top {
+		font-size:4rem;
+		border-bottom: 2px solid black;
+		.header-style;
+
+		h1 span {
+			font-size: 2rem;
+		}
+	}
+
+	.header-bottom {
+		font-size: 2.2rem;
+		.header-style;
+
+	}
+}
+
+.sec-heading {
+	background-color: @colorsplash;
+	.center;
+}
+
+.middle-one {
+	.block;
+	.block-padding;
+}
+
+.middle-two {
+	.block;
+	.block-padding;
+}
+
+.bottom {
+	.block;
+	.block-padding;
+}
+
+.contact {
+	.block;
+	.block-padding;
+}
+
+.box {
+	.square;
+}
