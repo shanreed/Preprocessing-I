@@ -32,9 +32,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
-}
+
 blockquote, q {
 	quotes: none;
 }
@@ -53,7 +51,276 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+//Variables
+@colorsplash: #BFB8CA;
+@accent: #E9ECEF;
+@name: 'Cinzel', serif;
+
+//Mixins
+.block() {
+	height:20%;
+	display:flex;	
+	justify-content: center;
+	justify-content: space-evenly;
 }
+
+.border(){
+	border-right: 2px solid black;
+	border-left: 2px solid black;
+}
+
+.block-padding(){
+	padding: 40px 0 10px 0;
+}
+
+.stacked() {
+		height:20%;
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+		
+}
+
+.header-style() {
+	width: 60%;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.square() {
+	display: flex;
+	flex-direction: column;
+	border: 2px solid black;
+	width: 40%;
+	align-items: center;
+	padding: 20px 0;
+	background-color: @colorsplash;
+}
+
+.center() {
+	display: flex;
+	justify-content: center;
+	font-weight: bolder;
+}
+
+//My code
+html {
+	font-size: 62.5%;
+	height: 100%;
+}
+
+body {
+	font-size: 1.6rem;
+	background-color: @accent;
+}
+
+/*Navagation*/
+.nav {
+	nav{
+		font-weight: bolder;
+		display: flex;
+		justify-content: center;
+		justify-content: space-evenly;
+		margin: 20px auto 10px auto;
+		max-width: 80%;		
+	
+	}
+
+	a {
+		text-decoration: none;
+		font-size: 2rem;
+		color: black;
+		@media (max-width: 500px) {
+			font-size: 1.5rem;
+
+		}
+	}	
+}
+
+
+.container{
+	width:80%;
+	height: 100%;
+	margin: 0 auto;
+	background-color: @colorsplash;
+
+}
+
+header {
+	background-color: @accent;
+	.block();
+	.stacked();
+
+	.header-top {
+		font-size:4rem;
+		border-bottom: 2px solid black;
+		@name;
+		.header-style();
+		@media (max-width: 500px) {
+			font-size: 2.5rem;
+			width: 100%;
+		}
+
+		h1 span {
+			font-size: 2rem;
+			@media (max-width: 500px) {
+				font-size: 1.3rem;
+				
+			}
+		}
+	}
+
+	.header-bottom {
+		font-size: 2.2rem;
+		.header-style();
+		padding-left: 20px;
+		padding-right: 20px;
+		background-color: @colorsplash;
+		border-left: 2px solid black;
+		border-right: 2px solid black;
+
+		@media (max-width: 500px){
+			width: 100%;
+			display: flex;
+			font-size: 1.5rem;
+		}
+
+	}
+}
+
+.sec-heading {
+	background-color: @colorsplash;
+	font-size: 2.5rem;
+	.center();
+	.border();
+	.block-padding;
+	@media (max-width: 500px) {
+		padding: 10px 0;
+		font-size: 1.5rem;
+	}
+	
+}
+
+.skills {
+	border-top:2px solid black
+}
+
+.box {
+	.square();
+	@media (max-width: 500px) {
+		border: none;
+	}
+}
+
+.middle-one {
+	.block();
+	.border();
+	@media(max-width: 500px) {
+		background-color: @accent;
+		font-size: 1rem;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		
+	}
+
+	h3 {
+	  width: 100%;
+	  text-align:center;
+	  border-bottom: 1px solid black;
+	  margin-bottom: 10px;
+	}
+
+	ul{
+	 list-style-position:inside;
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: flex-start;
+	 @media(max-width: 500px) {
+
+	 }
+
+	}
+}
+
+.middle-two {
+	.block();
+	.border();
+	@media(max-width: 500px) {
+		 background-color: @accent;
+		 border-top: 1px solid black;
+		border-bottom: 1px solid black;
+	}
+
+	ul {
+	 list-style-position:inside;
+	 @media(max-width: 500px) {
+		padding: 0 10px 0 10px;
+		font-size: 1rem;
+	 }
+	}
+	
+}
+
+.bottom {
+	.block();
+	.border();
+	@media(max-width: 500px) {
+		background-color: @accent; 
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+	}
+	.box {
+		padding: 0;
+
+
+     .edu-box {
+		width:100%;
+		text-align: center;
+		border-bottom: 1px solid black;
+		padding: 5px 0;
+		margin: 3px 0;
+		@media(max-width: 500px) {
+		 font-size: 1rem;
+		}
+
+		h4 {
+		  font-weight: bolder;
+		}
+	 }
+	
+	 .end-box {
+		 margin: 0;
+	 }
+
+	 .last-box {
+		 border:none;
+	 }
+	}
+}
+
+.contact {
+	width: 100%;
+	border: 1px solid black;
+	text-align: center;
+	
+
+	.contact {
+	padding: 20px 0;
+	a {
+		text-decoration: none;
+		color: black;
+	}
+	text-decoration: none;
+	@media(max-width: 500px) {
+		font-size: 1.5rem;
+	   }
+	}
+}
+
+footer {
+	.center();
+	background-color: @accent;
+	padding: 40px 0;
+}
+
 

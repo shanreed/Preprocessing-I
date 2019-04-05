@@ -1,1 +1,358 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+body {
+  font-size: 1.6rem;
+  background-color: #E9ECEF;
+}
+/*Navagation*/
+.nav nav {
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin: 20px auto 10px auto;
+  max-width: 80%;
+}
+.nav a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: black;
+}
+@media (max-width: 500px) {
+  .nav a {
+    font-size: 1.5rem;
+  }
+}
+.container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #BFB8CA;
+}
+header {
+  background-color: #E9ECEF;
+  justify-content: center;
+  justify-content: space-evenly;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .header-top {
+  font-size: 4rem;
+  border-bottom: 2px solid black;
+  width: 60%;
+  text-align: center;
+  padding: 20px 0;
+}
+@media (max-width: 500px) {
+  header .header-top {
+    font-size: 2.5rem;
+    width: 100%;
+  }
+}
+header .header-top h1 span {
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  header .header-top h1 span {
+    font-size: 1.3rem;
+  }
+}
+header .header-bottom {
+  font-size: 2.2rem;
+  width: 60%;
+  text-align: center;
+  padding: 20px 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #BFB8CA;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+@media (max-width: 500px) {
+  header .header-bottom {
+    width: 100%;
+    display: flex;
+    font-size: 1.5rem;
+  }
+}
+.sec-heading {
+  background-color: #BFB8CA;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  padding: 40px 0 10px 0;
+}
+@media (max-width: 500px) {
+  .sec-heading {
+    padding: 10px 0;
+    font-size: 1.5rem;
+  }
+}
+.skills {
+  border-top: 2px solid black;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  width: 40%;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #BFB8CA;
+}
+@media (max-width: 500px) {
+  .box {
+    border: none;
+  }
+}
+.middle-one {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+@media (max-width: 500px) {
+  .middle-one {
+    background-color: #E9ECEF;
+    font-size: 1rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+}
+.middle-one h3 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
+.middle-one ul {
+  list-style-position: inside;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.middle-two {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+@media (max-width: 500px) {
+  .middle-two {
+    background-color: #E9ECEF;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+}
+.middle-two ul {
+  list-style-position: inside;
+}
+@media (max-width: 500px) {
+  .middle-two ul {
+    padding: 0 10px 0 10px;
+    font-size: 1rem;
+  }
+}
+.bottom {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+@media (max-width: 500px) {
+  .bottom {
+    background-color: #E9ECEF;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+}
+.bottom .box {
+  padding: 0;
+}
+.bottom .box .edu-box {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding: 5px 0;
+  margin: 3px 0;
+}
+@media (max-width: 500px) {
+  .bottom .box .edu-box {
+    font-size: 1rem;
+  }
+}
+.bottom .box .edu-box h4 {
+  font-weight: bolder;
+}
+.bottom .box .end-box {
+  margin: 0;
+}
+.bottom .box .last-box {
+  border: none;
+}
+.contact {
+  width: 100%;
+  border: 1px solid black;
+  text-align: center;
+}
+.contact .contact {
+  padding: 20px 0;
+  text-decoration: none;
+}
+.contact .contact a {
+  text-decoration: none;
+  color: black;
+}
+@media (max-width: 500px) {
+  .contact .contact {
+    font-size: 1.5rem;
+  }
+}
+footer {
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  background-color: #E9ECEF;
+  padding: 40px 0;
+}
